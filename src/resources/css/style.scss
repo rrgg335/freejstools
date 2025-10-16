@@ -18,6 +18,12 @@
         --muted-text: #525252;
     }
 }
+@mixin hover-card($translate: -4px, $shadow: 0 4px 16px rgba(0, 0, 0, 0.15)) {
+  &:hover {
+    transform: translateY($translate);
+    box-shadow: $shadow;
+  }
+}
 body {
     margin: 0;
     padding: 0;
@@ -27,15 +33,18 @@ body {
     font-style: normal;
     background-color: var(--main-bg);
     overflow-x: hidden;
-}
-h1, h2, h3, h4, h5, h6 {
-    color: var(--main-text);
-    margin: 0;
-    font-weight: 600;
-}
-p {
-    color: var(--sub-text);
-    margin: 0;
+    h1, h2, h3, h4, h5, h6 {
+        color: var(--main-text);
+        margin: 0;
+        font-weight: 600;
+    }
+    p {
+        color: var(--sub-text);
+        margin: 0;
+    }
+    a {
+        color: inherit !important;
+    }
 }
 .text-main {
     color: var(--main-text);
@@ -46,19 +55,16 @@ p {
 .text-muted {
     color: var(--muted-text);
 }
-a {
-    color: inherit !important;
-}
 #logo-container {
     padding: 20px 35px;
     background-color: var(--light-bg);
     box-shadow: 0px 0px 5px var(--muted-text);
-}
-.logo {
-    font-family: "Comfortaa", sans-serif;
-    font-weight: 500;
-    font-size: 40px;
-    color: var(--accent);
+    .logo {
+        font-family: "Comfortaa", sans-serif;
+        font-weight: 500;
+        font-size: 40px;
+        color: var(--accent);
+    }
 }
 #main-container {
     padding: 20px 35px;
@@ -71,26 +77,22 @@ a {
     justify-content: center;
     width: 100%;
     gap: 1rem;
-}
-.action-card {
-    display: flex;
-    position: relative;
-    box-sizing: border-box;
-    flex: 1 1 calc(25% - 0.75rem);
-    flex-direction: column;
-    min-width: 250px;
-    max-width: 25%;
-    font-size: 1.5rem;
-    padding: 40px 25px;
-    text-decoration: none;
-    text-align: center;
-    transition: all 0.4s ease-in;
-    background-color: var(--light-bg);
-    border-radius: 12px;
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
-    border: 1px solid rgba(0,0,0,0.05);
-}
-.action-card:hover {
-  transform: translateY(-4px);
-  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.15);
+    .action-card {
+        display: flex;
+        position: relative;
+        box-sizing: border-box;
+        flex: 1 1 calc(25% - 0.75rem);
+        flex-direction: column;
+        min-width: 250px;
+        font-size: 1.5rem;
+        padding: 40px 25px;
+        text-decoration: none;
+        text-align: center;
+        transition: all 0.4s ease-in;
+        background-color: var(--light-bg);
+        border-radius: 12px;
+        box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+        border: 1px solid rgba(0,0,0,0.05);
+        @include hover-card();
+    }
 }
