@@ -5,6 +5,7 @@ export default defineConfig({
     build: {
         outDir: path.resolve(__dirname, '../docs/assets'),
         emptyOutDir: true,
+        copyPublicDir: false,
         rollupOptions: {
             input: {
                 app: path.resolve(__dirname, 'resources/js/app.js'),
@@ -16,5 +17,6 @@ export default defineConfig({
                 assetFileNames: `[name].[ext]`,
             }
         }
-    }
+    },
+    publicDir: false,
 });
