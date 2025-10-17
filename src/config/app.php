@@ -52,7 +52,17 @@ return [
     |
     */
 
-    'url' => env('APP_URL', 'http://localhost'),
+    'url' => env('APP_URL', 'https://freejstools.com'),
+
+    /*
+    |--------------------------------------------------------------------------
+    | Asset URL
+    |--------------------------------------------------------------------------
+    |
+    | This URL is used by the views to generate asset URLs.
+    |
+    */
+    'asset_url' => env('ASSET_URL', 'https://freejstools.com/assets'),
 
     /*
     |--------------------------------------------------------------------------
