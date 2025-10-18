@@ -2,7 +2,19 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
       <loc>https://freejstools.com</loc>
-      <lastmod>2025-10-17T16:41:33+00:00</lastmod>
+      <lastmod>2025-10-18T19:27:05+00:00</lastmod>
+      <changefreq>weekly</changefreq>
+      <priority>0.8</priority>
+  </url>
+  <url>
+      <loc>https://freejstools.com/password-generator</loc>
+      <lastmod>2025-10-18T19:27:05+00:00</lastmod>
+      <changefreq>weekly</changefreq>
+      <priority>0.8</priority>
+  </url>
+  <url>
+      <loc>https://freejstools.com/base64-encoder</loc>
+      <lastmod>2025-10-18T19:27:05+00:00</lastmod>
       <changefreq>weekly</changefreq>
       <priority>0.8</priority>
   </url>
