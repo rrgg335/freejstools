@@ -1,0 +1,1 @@
+document.getElementById("exploreTools").onclick=function(){document.getElementById("tools").scrollIntoView({behavior:"smooth"})};const o=localStorage.getItem("lastVisitedTool");if(o){var e=document.querySelector('.tool-card[data-tool-name="'+o+'"]'),t=document.querySelector(".last-visited-tool");e&&t&&(t.innerHTML=e.outerHTML)}
